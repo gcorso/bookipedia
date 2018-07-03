@@ -1,6 +1,6 @@
 # Bookipedia
 
-Bookipedia is an open mobile library, download the Android app on the [Play Store](https://play.google.com/store/apps/details?id=com.gcappslab.bookipedia). We believe that culture should be open and accessible to everyone, therefore we offer you a completely free app where you can read hundreds of books.
+Bookipedia is an open source mobile library, download the Android app on the [Play Store](https://play.google.com/store/apps/details?id=com.gcappslab.bookipedia). We believe that culture should be open and accessible to everyone, therefore we offer you a completely free app where you can read hundreds of books.
 
 - Unlimited Reading — Choose from hundreds classics books we legally offer you.
 
