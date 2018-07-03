@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_tablet">21sp</dimen>
+    <dimen name="horizontal_scrool_tablet">200dp</dimen>
+    <dimen name="book_title_tablet">16dp</dimen>
+    <dimen name="book_author_tablet">15dp</dimen>
+    <dimen name="comunication_subtitle_tablet">16dp</dimen>
+    <dimen name="comunication_title_tablet">18dp</dimen>
+    <dimen name="comunication_image_tablet">150dp</dimen>
+    <dimen name="bbim_tablet">45dp</dimen>
+    <dimen name="bbll_tablet">70dp</dimen>
+    <dimen name="login_fields">17sp</dimen>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#46f133</color>
+
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+
+    <color name="bbColor">#ffffff</color>
+    <color name="semiTransparentw">#bdffffff</color>
+    <color name="semiTransparentb">#bd000000</color>
+    <color name="semiTransparents">#d3645032</color>
+    <color name="sepiaBack">#ECE1CA</color>
+    <color name="sepiaText">#645032</color>
+
+    <color name="whiteTitle">#cc0000</color>
+    <color name="whiteProgress">#FF757575</color>
+    <color name="highlight">#fffba6</color>
+    <color name="darkBackground">#354499</color>
+    <color name="dark_blue">#021964</color>
+
+    <color name="semi_white">#ffb5b4b4</color>
+    <color name="back_bottom_bar">#bb000000</color>
+    <color name="rating">#1d8612</color>
+
+</resources>

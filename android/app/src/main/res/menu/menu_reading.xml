@@ -1,0 +1,53 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gcappslab.bookipedia.Reading.ReadingActivity">
+
+    <item
+        android:id="@+id/action_font"
+        android:orderInCategory="10"
+        android:title="View Options"
+        android:icon="@drawable/aaw"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/action_note"
+        android:orderInCategory="11"
+        android:title="Take a note"
+        android:icon="@drawable/notew"
+        app:showAsAction="ifRoom"
+        />
+
+
+    <item
+        android:id="@+id/action_help_and_feedback"
+        android:orderInCategory="104"
+        android:title="Help &amp; Feedback"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_bookmark"
+        android:orderInCategory="101"
+        android:title="Add bookmark"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_notebook"
+        android:orderInCategory="102"
+        android:title="Notebook"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_read"
+        android:orderInCategory="102"
+        android:title="Read Aloud"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="102"
+        android:title="About this book"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Bookipedia</string>
+
+    <string name="font_prompt">Default</string>
+    <string name="color_prompt">White</string>
+    <string name="register_prompt">Do not have an account?\nRegister now</string>
+    <string name="login_prompt">Do you already have an account? Login now</string>
+    <string name="register_link">Register</string>
+    <string name="login_link">Login</string>
+    <string name="favtheme">Favourite theme...</string>
+    <string name="delete">Delete</string>
+    <string name="logout">Log Out</string>
+    <string name="cancel">Cancel</string>
+    <string name="suggestion_text">Do you have a book you would like to read, but it is not on Bookipedia? Send it to us and we will do our best to add it.</string>
+    <string name="noresult_subtitle">Please check you have the right spelling. If you cannot find a book, tap here and send us its name. We will do our best to add it as soon as possible.</string>
+
+    <string-array name="font_array">
+        <item>  Bookerly  </item>
+        <item>  Caecilia  </item>
+        <item>  Georgia  </item>
+        <item>  Palatino  </item>
+        <item>  Baskerville  </item>
+        <item>  Helvetica  </item>
+        <item>  Lucida  </item>
+    </string-array>
+
+    <string-array name="color_array">
+        <item>  White  </item>
+        <item>  Black  </item>
+        <item>  Sepia  </item>
+    </string-array>
+
+    <string-array name="theme_arrays">
+        <item>Science fiction</item>
+        <item>Satire</item>
+        <item>Drama</item>
+        <item>Action</item>
+        <item>Romance</item>
+        <item>Mystery</item>
+        <item>Religion</item>
+        <item>History</item>
+    </string-array>
+
+    <string-array name="long_library">
+        <item>Continue reading</item>
+        <item>About the book</item>
+        <item>Remove book from library</item>
+    </string-array>
+
+</resources>

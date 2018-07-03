@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                tools:context="com.gcappslab.bookipedia.Login.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/emailField"
+            android:layout_marginTop="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="cursive"
+                    android:text="Bookipedia"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="50sp"
+                    android:textStyle="normal|bold"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/emailField"
+            android:layout_alignTop="@+id/emailField"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            app:srcCompat="@drawable/icon_email"/>
+
+        <ImageView
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/passwordField"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@drawable/icon_login"/>
+
+        <EditText
+            android:id="@+id/emailField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/passwordField"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/imageEmail"
+            android:background="@drawable/inputbox"
+            android:hint="Email..."
+            android:inputType="textEmailAddress"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/semi_white"
+            android:textColorHint="@color/semi_white"
+            android:textSize="@dimen/login_fields">
+        </EditText>
+
+        <ImageView
+            android:id="@+id/imagePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/passwordField"
+            android:layout_alignTop="@+id/passwordField"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            app:srcCompat="@drawable/icon_password"/>
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/registerPromptText"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/loginButton"
+            android:layout_toRightOf="@+id/imagePassword"
+            android:background="@drawable/inputbox"
+            android:fontFamily="sans-serif"
+            android:hint="Password..."
+            android:inputType="textPassword"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/semi_white"
+            android:textColorHint="@color/semi_white"
+            android:textSize="@dimen/login_fields">
+        </EditText>
+
+
+        <TextView
+            android:id="@+id/registerPromptText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="35dp"
+            android:layout_weight="1"
+            android:text="@string/register_prompt"
+            android:textAlignment="center"
+            android:textColor="@color/semi_white"
+            android:textColorLink="@color/semi_white"
+            android:textSize="16sp"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.gcappslab.bookipedia.Reading.RatingActivity">
+
+        <!--<TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btBack"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/btBack"
+            android:text="Before You Go"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/btBack"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/back"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <TextView
+                android:id="@+id/tvRat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:text="Well done! You finished this book!\nGive it a rating to help other readers!"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:textSize="18sp"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.AppCompat.RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="35dp"
+                android:layout_marginTop="15dp"
+                android:clickable="false"
+                android:numStars="5"
+                android:progressTint="@color/rating"
+                android:rating="0"
+                android:stepSize="1"/>
+
+            <TextView
+                android:id="@+id/tvRatingAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:text="More books by "
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:textSize="@dimen/title_tablet"/>
+
+            <android.support.v17.leanback.widget.HorizontalGridView
+                android:id="@+id/gridBooks"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/horizontal_scrool_tablet"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bbll_tablet"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/back_bottom_bar"
+        android:elevation="8dp"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:id="@+id/firstLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="20"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bbHome"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bbim_tablet"
+                android:adjustViewBounds="false"
+                app:srcCompat="@drawable/bbhome"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="Home"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Small"
+                android:textSize="10sp"
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/firstView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/secondLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/secondView"
+            android:layout_toRightOf="@+id/firstView"
+            android:layout_weight="20"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bbLibrary"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bbim_tablet"
+                android:background="#00fafafa"
+                app:srcCompat="@drawable/bblibraryp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="Library"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Small"
+                android:textColor="@color/bbColor"
+                android:textSize="10sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/secondView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/thirdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/thirdView"
+            android:layout_toRightOf="@+id/secondView"
+            android:layout_weight="20"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bbBrowse"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bbim_tablet"
+                android:background="#00fafafa"
+                app:srcCompat="@drawable/bbbrowse"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="Browse"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Small"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/thirdView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
+
+
+        <LinearLayout
+            android:id="@+id/fourthLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/fourthView"
+            android:layout_weight="20"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bbSearch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bbim_tablet"
+                android:background="#00fafafa"
+                app:srcCompat="@drawable/bbsearch"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="Search"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Material.Small"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

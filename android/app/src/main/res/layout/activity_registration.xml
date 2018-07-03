@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:background="@drawable/background"
+                tools:context="com.gcappslab.bookipedia.Login.RegistrationActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/emailField">
+
+            <TextView
+                android:text="Register now !"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="cursive"
+                android:textSize="45sp"
+                android:textStyle="normal|bold"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/emailField"
+            android:layout_alignTop="@+id/emailField"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            app:srcCompat="@drawable/icon_email"/>
+
+        <EditText
+            android:id="@+id/emailField"
+            android:hint="Email..."
+            android:layout_above="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/semi_white"
+            android:textColorHint="@color/semi_white"
+            android:textSize="@dimen/login_fields"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/inputbox"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imageEmail">
+        </EditText>
+
+        <ImageView
+            android:id="@+id/imagePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/passwordField"
+            android:layout_alignTop="@+id/passwordField"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            app:srcCompat="@drawable/icon_password"
+            />
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:hint="Password..."
+            android:layout_above="@+id/rpasswordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPassword"
+            android:textColor="@color/semi_white"
+            android:textColorHint="@color/semi_white"
+            android:textSize="@dimen/login_fields"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/inputbox"
+            android:fontFamily="sans-serif"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imagePassword"
+            >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/imagePasswordR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rpasswordField"
+            android:layout_alignTop="@+id/rpasswordField"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            app:srcCompat="@drawable/icon_password"
+            />
+
+        <EditText
+            android:id="@+id/rpasswordField"
+            android:hint="Repeat password..."
+            android:layout_above="@+id/genreField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPassword"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/semi_white"
+            android:textColorHint="@color/semi_white"
+            android:textSize="@dimen/login_fields"
+            android:background="@drawable/inputbox"
+            android:layout_marginRight="30dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imagePasswordR"
+            >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/imageGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/genreField"
+            android:layout_alignTop="@+id/genreField"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            app:srcCompat="@drawable/icon_genre"
+            />
+
+        <Spinner
+            android:id="@+id/genreField"
+            android:entries="@array/theme_arrays"
+            android:prompt="@string/favtheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="number"
+            android:textColor="@color/semi_white"
+            android:textColorHint="@color/semi_white"
+            android:textSize="@dimen/login_fields"
+            android:padding="10dp"
+            android:background="@drawable/inputbox"
+            android:layout_marginRight="30dp"
+            android:layout_above="@+id/btRegister"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imageGenre">
+        </Spinner>
+
+
+        <ImageView
+            android:id="@+id/btRegister"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/genreField"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:adjustViewBounds="true"
+            android:elevation="3dp"
+            android:src="@drawable/icon_register"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/errorMessage"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_below="@+id/genreField"
+            android:layout_marginTop="-40dp"
+            android:layout_alignRight="@id/genreField"
+            android:layout_marginBottom="35dp"
+            android:textAlignment="center"
+            android:layout_alignLeft="@+id/genreField"/>
+
+
+        <TextView
+            android:id="@+id/loginPromptText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/genreField"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="false"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/btRegister"
+            android:layout_weight="1"
+            android:text="@string/login_prompt"
+            android:textAlignment="center"
+            android:textColor="@color/semi_white"
+            android:textColorLink="@color/semi_white"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+

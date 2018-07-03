@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gcappslab.bookipedia.Library.Library.LibraryActivity">
+
+    <item
+        android:id="@+id/action_help_and_feedback"
+        android:orderInCategory="104"
+        android:title="Help &amp; Feedback"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_suggestion"
+        android:orderInCategory="104"
+        android:title="Suggest a book"
+        app:showAsAction="never" />
+
+</menu>

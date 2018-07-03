@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.gcappslab.bookipedia">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.gcappslab.bookipedia.Reading.ReadingActivity"
+            android:parentActivityName="com.gcappslab.bookipedia.Library.Home.HomeActivity"
+            android:theme="@style/ThemeTransparent">
+
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gcappslab.bookipedia.Library.Home.HomeActivity"/>
+        </activity>
+        <activity android:name="com.gcappslab.bookipedia.Library.Home.HomeActivity">
+        </activity>
+        <activity android:name="com.gcappslab.bookipedia.Library.Library.LibraryActivity">
+        </activity>
+        <activity android:name="com.gcappslab.bookipedia.Library.Browse.BrowseActivity">
+        </activity>
+        <activity
+            android:name="com.gcappslab.bookipedia.Library.Search.SearchActivity"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name="com.gcappslab.bookipedia.Library.Book.BookActivity">
+        </activity>
+        <activity
+            android:name="com.gcappslab.bookipedia.Library.Browse.GenresActivity"
+            android:parentActivityName="com.gcappslab.bookipedia.Library.Browse.BrowseActivity">
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gcappslab.bookipedia.Library.Browse.BrowseActivity"/>
+        </activity>
+        <activity
+            android:name="com.gcappslab.bookipedia.Login.LoginActivity"
+            android:theme="@style/LoginTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gcappslab.bookipedia.Login.RegistrationActivity"
+            android:theme="@style/LoginTheme">
+        </activity>
+        <activity android:name="com.gcappslab.bookipedia.Library.Author.AuthorActivity">
+        </activity>
+        <activity
+            android:name="com.gcappslab.bookipedia.Reading.RatingActivity"
+            android:label="Before You Go"
+            android:parentActivityName="com.gcappslab.bookipedia.Reading.ReadingActivity">
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gcappslab.bookipedia.Reading.ReadingActivity"/>
+        </activity>
+        <activity
+            android:name="com.gcappslab.bookipedia.Settings.SuggestionActivity"
+            android:parentActivityName="com.gcappslab.bookipedia.Settings.HelpAndFeedbackActivity">
+
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gcappslab.bookipedia.Settings.HelpAndFeedbackActivity"/>
+        </activity>
+        <activity
+            android:name="com.gcappslab.bookipedia.Settings.HelpAndFeedbackActivity"
+            android:parentActivityName="com.gcappslab.bookipedia.Library.Home.HomeActivity">
+
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gcappslab.bookipedia.Library.Home.HomeActivity"/>
+
+        </activity>
+    </application>
+
+</manifest>
