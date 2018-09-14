@@ -10,8 +10,15 @@ Bookipedia is an open source mobile library, download the Android app on the [Pl
 
 - Read Books as you Like — Choose your favorite font, dimension, background color and orientation.
 
-## Development structure
-At the moment the platform is composed by an Android application which retrieves the books from a MySQL database hosted online through a PHP webserver.
+For documentation read [this file](documentation/docs.pdf). If you are interested in the project and/or you want to contribute, feel free to write me at contact@gcappslab.com. 
 
-### Data Flow Diagram
+<p align="center">
+  <img width="900"  src="images/wallpaper.png">
+</p>
+
+<p align="center">
+  <img width="900"  src="images/screens.png">
+</p>
+
+
 
