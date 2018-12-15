@@ -10,7 +10,7 @@ Bookipedia is an open source mobile library, download the Android app on the [Pl
 
 - Read Books as you Like — Choose your favorite font, dimension, background color and orientation.
 
-For documentation read [this file](documentation/docs.pdf). If you are interested in the project and/or you want to contribute, feel free to write me at contact@gcappslab.com. 
+For documentation read [this file](documentation/docs.pdf). If you are interested in the project and/or you want to contribute, feel free to write me at gcappslab@gmail.com. 
 
 <p align="center">
   <img width="900"  src="images/wallpaper.png">
