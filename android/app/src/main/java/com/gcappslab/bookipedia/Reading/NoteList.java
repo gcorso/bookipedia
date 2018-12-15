@@ -18,6 +18,7 @@ import java.util.List;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_BOOKID;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_NOTES;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_USERID;
+import static com.gcappslab.bookipedia.Library.Objects.Constants.URL_API;
 
 /**
  * Class that defines a List of Notes
@@ -33,7 +34,7 @@ public class NoteList {
     private BooksLDH booksLDH;
     private static final String NOTES_SEPARATOR = "<<-->>";
     private static final String PARTS_SEPARATOR = "<->";
-    private static final String url_update_notes = "http://api.gcappslab.com/update_notes.php";
+    private static final String url_update_notes = URL_API+"update_notes.php";
     JSONParser jsonParser = new JSONParser();
 
     public NoteList(String notes, int bookid, int userid, Context context) {

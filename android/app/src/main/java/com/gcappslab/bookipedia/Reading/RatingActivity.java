@@ -35,6 +35,7 @@ import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_BOOKID;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_RATING;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_SUCCESS;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_USERID;
+import static com.gcappslab.bookipedia.Library.Objects.Constants.URL_API;
 
 public class RatingActivity extends AppCompatActivity {
     private TextView tvAuthorRating;
@@ -47,7 +48,7 @@ public class RatingActivity extends AppCompatActivity {
     private float rating;
 
     private JSONParser jsonParser = new JSONParser();
-    private static String url_add_rating = "http://api.gcappslab.com/add_rating.php";
+    private static String url_add_rating = URL_API+"add_rating.php";
     private boolean connection;
 
     @Override

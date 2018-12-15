@@ -62,6 +62,7 @@ import java.util.Locale;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_BOOKID;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_PROGRESS;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_USERID;
+import static com.gcappslab.bookipedia.Library.Objects.Constants.URL_API;
 
 public class ReadingActivity extends AppCompatActivity {
 
@@ -111,7 +112,7 @@ public class ReadingActivity extends AppCompatActivity {
     private TextToSpeech textToSpeech;
     private User user;
 
-    private static final String url_update_progress = "http://api.gcappslab.com/update_progress.php";
+    private static final String url_update_progress = URL_API+"update_progress.php";
     JSONParser jsonParser = new JSONParser();
     private static final int PROGRESS_UPDATE_FREQUENCY = 3;
     private int progress_count;

@@ -57,6 +57,7 @@ import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_SYNC;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_USER;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_USERID;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_YEAR;
+import static com.gcappslab.bookipedia.Library.Objects.Constants.URL_API;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -67,9 +68,9 @@ public class LoginActivity extends AppCompatActivity {
     private JSONParser jsonParser = new JSONParser();
     private boolean connection;
 
-    public static String url_login = "http://api.gcappslab.com/login.php";
-    public static String url_books_user = "http://api.gcappslab.com/get_books_user.php";
-    public static String url_check_device = "http://api.gcappslab.com/check_device.php";
+    public static String url_login = URL_API+"login.php";
+    public static String url_books_user = URL_API+"get_books_user.php";
+    public static String url_check_device = URL_API+"check_device.php";
     private boolean logged;
     private boolean tosync;
 

@@ -20,13 +20,14 @@ import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_BOOKS;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_NAME;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_SUCCESS;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_WHERE;
+import static com.gcappslab.bookipedia.Library.Objects.Constants.URL_API;
 
 /**
  * Background Async Task to load books by making HTTP Request
  * */
 public class LoadBooks extends AsyncTask<String, String, String> {
 
-    private static String url_all_books = "http://api.gcappslab.com/query_books.php";
+    private static String url_all_books = URL_API+"query_books.php";
     private JSONParser jParser = new JSONParser();
     private List<Book> listBooks = new ArrayList<>();
     private String where;

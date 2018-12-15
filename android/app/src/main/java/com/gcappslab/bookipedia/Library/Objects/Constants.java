@@ -4,6 +4,8 @@ import com.gcappslab.bookipedia.R;
 
 public class Constants {
 
+    public static final String URL_API = "https://gcorso.000webhostapp.com/bookipedia/";
+
     public static final String TAG_SUCCESS = "success";
     public static final String TAG_BOOKS = "books";
     public static final String TAG_BOOK = "book";

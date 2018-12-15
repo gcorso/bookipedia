@@ -18,13 +18,14 @@ import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_AUTHORS;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_NAME;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_SUCCESS;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_WHERE;
+import static com.gcappslab.bookipedia.Library.Objects.Constants.URL_API;
 
 /**
  * Background Async Task to load authors by making HTTP Request
  * */
 public class LoadAuthors extends AsyncTask<String, String, String> {
 
-    private static String url_all_authors = "http://api.gcappslab.com/query_authors.php";
+    private static String url_all_authors = URL_API+"query_authors.php";
     private JSONParser jParser = new JSONParser();
     private List<Author> listAuthors = new ArrayList<>();
     private String where;

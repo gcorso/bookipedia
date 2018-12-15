@@ -34,6 +34,7 @@ import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_AUTHORID;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_BIOGRAPHY;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_NAME;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_SUCCESS;
+import static com.gcappslab.bookipedia.Library.Objects.Constants.URL_API;
 
 public class AuthorActivity extends AppCompatActivity {
 
@@ -47,7 +48,7 @@ public class AuthorActivity extends AppCompatActivity {
 
     private ProgressDialog pDialog;
     private JSONParser jsonParser = new JSONParser();
-    private static final String url_author_details = "http://api.gcappslab.com/get_author_details.php";
+    private static final String url_author_details = URL_API+"get_author_details.php";
     private boolean connection;
 
     @Override

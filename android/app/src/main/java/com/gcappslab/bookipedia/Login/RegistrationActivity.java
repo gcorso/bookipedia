@@ -40,6 +40,7 @@ import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_PASSWORD;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_SUCCESS;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_USER;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_USERID;
+import static com.gcappslab.bookipedia.Library.Objects.Constants.URL_API;
 import static com.gcappslab.bookipedia.Login.LoginActivity.url_login;
 
 public class RegistrationActivity extends AppCompatActivity {
@@ -55,7 +56,7 @@ public class RegistrationActivity extends AppCompatActivity {
     private JSONParser jsonParser = new JSONParser();
     private boolean connection;
 
-    private static String url_register = "http://api.gcappslab.com/register_user.php";
+    private static String url_register = URL_API+"register_user.php";
     private boolean saved;
 
     @Override

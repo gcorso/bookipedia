@@ -30,6 +30,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_SUCCESS;
+import static com.gcappslab.bookipedia.Library.Objects.Constants.URL_API;
 
 public class SuggestionActivity extends AppCompatActivity {
 
@@ -44,7 +45,7 @@ public class SuggestionActivity extends AppCompatActivity {
 
     private ProgressDialog pDialog;
     private JSONParser jsonParser = new JSONParser();
-    private static String url_create_suggestion = "http://api.gcappslab.com/create_suggestion.php";
+    private static String url_create_suggestion = URL_API+"create_suggestion.php";
     private boolean connection;
 
     @Override

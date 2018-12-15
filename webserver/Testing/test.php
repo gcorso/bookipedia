@@ -1,3 +1,4 @@
 <?php
-    echo "Welcome, I am connecting Android to PHP, MySQL 2, kpkpkp";
+	phpinfo();
+    //echo "Welcome, I am connecting Android to PHP, MySQL 2, kpkpkp";
 ?>

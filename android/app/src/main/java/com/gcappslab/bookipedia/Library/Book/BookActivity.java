@@ -50,6 +50,7 @@ import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_REVIEWS;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_SUCCESS;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_USERID;
 import static com.gcappslab.bookipedia.Library.Objects.Constants.TAG_YEAR;
+import static com.gcappslab.bookipedia.Library.Objects.Constants.URL_API;
 
 public class BookActivity extends AppCompatActivity {
     private int id;
@@ -62,9 +63,9 @@ public class BookActivity extends AppCompatActivity {
     private JSONParser jsonParser = new JSONParser();
     private boolean connection;
 
-    private static final String url_book_details = "http://api.gcappslab.com/get_book_details.php";
-    private static final String url_book_file = "http://api.gcappslab.com/get_book_file.php";
-    private static final String url_create_reading = "http://api.gcappslab.com/create_reading.php";
+    private static final String url_book_details = URL_API+"get_book_details.php";
+    private static final String url_book_file = URL_API+"get_book_file.php";
+    private static final String url_create_reading = URL_API+"create_reading.php";
 
     private static final int LENGTH_MAX = 1000;
 
